@@ -1,0 +1,131 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.19.0
+2 info using node@v24.21.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\shabi\Documents\Codex\2026-10-01\files-pasted-by-the-user-i\.npmrc
+5 silly config load:file:C:\Users\shabi\.npmrc
+6 silly config load:file:C:\Users\shabi\Documents\Codex\2026-10-01\files-pasted-by-the-user-i\etc\npmrc
+7 verbose title npm uninstall react react-dom vite
+8 verbose argv "uninstall" "--prefix" "C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i" "react" "react-dom" "vite" "--cache" "C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\outputs\\jaffaz-restaurant\\.npm-cache"
+9 verbose logfile logs-max:10 dir:C:\Users\shabi\Documents\Codex\2026-10-01\files-pasted-by-the-user-i\outputs\jaffaz-restaurant\.npm-cache\_logs\2026-10-01T12_37_45_271Z-
+10 verbose logfile C:\Users\shabi\Documents\Codex\2026-10-01\files-pasted-by-the-user-i\outputs\jaffaz-restaurant\.npm-cache\_logs\2026-10-01T12_37_45_271Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:2348810240 maxSize:587202560 maxEntrySize:293601280
+13 silly idealTree buildDeps
+14 silly reify mark retired [
+14 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\@oxc-project\\types'
+14 silly reify ]
+15 silly reify mark retired [
+15 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\@rolldown\\binding-win32-x64-msvc'
+15 silly reify ]
+16 silly reify mark retired [
+16 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\@rolldown\\pluginutils'
+16 silly reify ]
+17 silly reify mark retired [
+17 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\detect-libc'
+17 silly reify ]
+18 silly reify mark retired [
+18 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\fdir'
+18 silly reify ]
+19 silly reify mark retired [
+19 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\lightningcss'
+19 silly reify ]
+20 silly reify mark retired [
+20 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\lightningcss-win32-x64-msvc'
+20 silly reify ]
+21 silly reify mark retired [
+21 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\nanoid',
+21 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\nanoid',
+21 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\nanoid.cmd',
+21 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\nanoid.ps1'
+21 silly reify ]
+22 silly reify mark retired [
+22 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\picocolors'
+22 silly reify ]
+23 silly reify mark retired [
+23 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\picomatch'
+23 silly reify ]
+24 silly reify mark retired [
+24 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\postcss'
+24 silly reify ]
+25 silly reify mark retired [
+25 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\react'
+25 silly reify ]
+26 silly reify mark retired [
+26 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\react-dom'
+26 silly reify ]
+27 silly reify mark retired [
+27 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\rolldown',
+27 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\rolldown',
+27 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\rolldown.cmd',
+27 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\rolldown.ps1'
+27 silly reify ]
+28 silly reify mark retired [
+28 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\scheduler'
+28 silly reify ]
+29 silly reify mark retired [
+29 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\source-map-js'
+29 silly reify ]
+30 silly reify mark retired [
+30 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\tinyglobby'
+30 silly reify ]
+31 silly reify mark retired [
+31 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\vite',
+31 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\vite',
+31 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\vite.cmd',
+31 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\vite.ps1'
+31 silly reify ]
+32 silly reify moves {
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\@oxc-project\\types': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\@oxc-project\\.types-UmIiuiHQ',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\@rolldown\\binding-win32-x64-msvc': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\@rolldown\\.binding-win32-x64-msvc-MoT1zPDb',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\@rolldown\\pluginutils': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\@rolldown\\.pluginutils-k0MO18kj',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\detect-libc': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.detect-libc-lE3rglGQ',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\fdir': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.fdir-WHBxSxQ1',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\lightningcss': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.lightningcss-auN9yYHv',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\lightningcss-win32-x64-msvc': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.lightningcss-win32-x64-msvc-iMipKjgA',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\nanoid': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.nanoid-S5W9uW7E',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\nanoid': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\.nanoid-onXZDZBA',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\nanoid.cmd': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\.nanoid.cmd-TjPiFRD8',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\nanoid.ps1': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\.nanoid.ps1-KQHQsas2',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\picocolors': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.picocolors-G5otOr6M',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\picomatch': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.picomatch-OS5tVIm6',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\postcss': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.postcss-uOGVxkAk',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\react': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.react-QdGiIlBi',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\react-dom': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.react-dom-JnMbqBnS',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\rolldown': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.rolldown-sJiSEuuM',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\rolldown': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\.rolldown-xiDO1FVn',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\rolldown.cmd': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\.rolldown.cmd-2ec6ulCR',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\rolldown.ps1': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\.rolldown.ps1-P1DRJ6c6',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\scheduler': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.scheduler-bj7h0HwR',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\source-map-js': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.source-map-js-kpQ8fDiv',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\tinyglobby': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.tinyglobby-nhvOXVBH',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\vite': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.vite-jfAdFdPq',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\vite': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\.vite-7vReEyDb',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\vite.cmd': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\.vite.cmd-fyvOpHaS',
+32 silly reify   'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\vite.ps1': 'C:\\Users\\shabi\\Documents\\Codex\\2026-10-01\\files-pasted-by-the-user-i\\node_modules\\.bin\\.vite.ps1-OcN6iVdV'
+32 silly reify }
+33 silly audit report null
+34 silly REMOVE node_modules/vite
+35 silly REMOVE node_modules/tinyglobby
+36 silly REMOVE node_modules/source-map-js
+37 silly REMOVE node_modules/scheduler
+38 silly REMOVE node_modules/rolldown
+39 silly REMOVE node_modules/react-dom
+40 silly REMOVE node_modules/react
+41 silly REMOVE node_modules/postcss
+42 silly REMOVE node_modules/picomatch
+43 silly REMOVE node_modules/picocolors
+44 silly REMOVE node_modules/nanoid
+45 silly REMOVE node_modules/lightningcss-win32-x64-msvc
+46 silly REMOVE node_modules/lightningcss
+47 silly REMOVE node_modules/fdir
+48 silly REMOVE node_modules/detect-libc
+49 silly REMOVE node_modules/@rolldown/pluginutils
+50 silly REMOVE node_modules/@rolldown/binding-win32-x64-msvc
+51 silly REMOVE node_modules/@oxc-project/types
+52 verbose cwd C:\Users\shabi\Documents\Codex\2026-10-01\files-pasted-by-the-user-i
+53 verbose os Windows_NT 10.0.19045
+54 verbose node v24.21.0
+55 verbose npm  v11.19.0
+56 verbose exit 0
+57 info ok

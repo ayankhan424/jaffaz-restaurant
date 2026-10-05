@@ -1,0 +1,97 @@
+// Menu prices transcribed from the menu images provided by the restaurant.
+// Sizes are separate choices so customers see an exact price before adding.
+const pizzaSizes = (prices) => Object.entries(prices).map(([size, price]) => ({ size, price }));
+const item = (id, name, category, description, price, image, extra = {}) => ({
+  id, name, category, description, price, image: `/images/dishes/${id}.webp`, ...extra,
+});
+
+export const menuItems = [
+  item("cheese-lovers", "Cheese Lovers", "Pizza", "A massive layer of melted 100% real cheese.", 500, "/images/pizza.webp", { sizes: pizzaSizes({ S: 500, M: 850, L: 1200, XL: 1850 }) }),
+  item("chicken-tikka-pizza", "Chicken Tikka", "Pizza", "Chicken tikka, capsicum and onion.", 630, "/images/pizza.webp", { sizes: pizzaSizes({ S: 630, M: 990, L: 1420, XL: 2070 }) }),
+  item("chicken-fajita", "Chicken Fajita", "Pizza", "Marinated chicken, onion, tomato and capsicum.", 630, "/images/pizza.webp", { sizes: pizzaSizes({ S: 630, M: 990, L: 1420, XL: 2070 }) }),
+  item("chicken-tandoori-pizza", "Chicken Tandoori", "Pizza", "BBQ chicken, tomato and onion.", 630, "/images/pizza.webp", { sizes: pizzaSizes({ S: 630, M: 990, L: 1420, XL: 2070 }) }),
+  item("creamy-pizza", "Creamy Pizza", "Pizza", "Melted cheese with a creamy topping.", 690, "/images/pizza.webp", { sizes: pizzaSizes({ S: 690, M: 1170, L: 1600, XL: 2250 }) }),
+  item("chicken-supreme", "Chicken Supreme", "Pizza", "Chicken sausage, spicy chicken, fajita, smoked chicken, olives, green peppers, tomato and sweet corn.", 690, "/images/pizza.webp", { sizes: pizzaSizes({ S: 690, M: 1170, L: 1600, XL: 2250 }) }),
+  item("malai-boti", "Malai Boti", "Pizza", "Malai boti chunks with a blend of flavours.", 690, "/images/pizza.webp", { sizes: pizzaSizes({ S: 690, M: 1170, L: 1600, XL: 2250 }) }),
+  item("steak-pizza", "Steak Pizza", "Pizza", "Alfredo sauce, mozzarella, juicy steak, bell peppers, mushrooms and cheese.", 690, "/images/pizza.webp", { sizes: pizzaSizes({ S: 690, M: 1170, L: 1600, XL: 2250 }) }),
+  item("split-pizza", "Split Pizza", "Pizza", "Choose two flavours from Tikka, Fajita, Tandoori, Creamy, Supreme, Malai Boti or Steak. Price on request.", null, "/images/pizza.webp", { sizes: [], askPrice: true }),
+  item("lazania-pizza", "Lazania Pizza", "Pizza", "Chicken, cheese-filled edges, onion, capsicum, sausages and black olives.", 730, "/images/pizza.webp", { sizes: pizzaSizes({ S: 730, M: 1320, L: 1800, XL: 2500 }) }),
+  item("behari-kebab-pizza", "Behari Kebab", "Pizza", "Kebab and chicken with onion, coriander, lemon, ginger and black olives.", 730, "/images/pizza.webp", { sizes: pizzaSizes({ S: 730, M: 1320, L: 1800, XL: 2500 }) }),
+  item("bonfire-pizza", "Bonfire Pizza", "Pizza", "Melted cheese filled with kebab on the side, topped with olives, onion, tomato and capsicum.", 1320, "/images/pizza.webp", { sizes: pizzaSizes({ M: 1320, L: 1800, XL: 2500 }) }),
+  item("jaffaz-special-pizza", "Jaffa’z Special", "Pizza", "Melted cheese filled with gola kebab on the side, topped with olives, onion and mushrooms.", 1320, "/images/pizza.webp", { sizes: pizzaSizes({ M: 1320, L: 1800, XL: 2500 }) }),
+
+  item("deal-big-1", "Big Deal 1", "Pizza Deals", "2 small pizzas + 1 litre drink.", 1280, "/images/pizza.webp"),
+  item("deal-big-2", "Big Deal 2", "Pizza Deals", "1 medium pizza + 10 hot wings + 1 litre drink.", 1600, "/images/pizza.webp"),
+  item("deal-big-3", "Big Deal 3", "Pizza Deals", "2 medium pizzas + 1 litre drink.", 2040, "/images/pizza.webp"),
+  item("deal-big-4", "Big Deal 4", "Pizza Deals", "1 large pizza + 15 hot wings + 1.5 litre drink.", 2370, "/images/pizza.webp"),
+  item("deal-big-5", "Big Deal 5", "Pizza Deals", "1 large pizza + 1 medium pizza + 1.5 litre drink.", 2520, "/images/pizza.webp"),
+  item("deal-big-6", "Big Deal 6", "Pizza Deals", "2 large pizzas + 1.5 litre drink.", 2950, "/images/pizza.webp"),
+
+  item("mexican-chicken-steak", "Mexican Sauce Chicken Steak", "Specialities", "Chicken steak with Mexican sauce.", 940, "/images/pasta.webp"),
+  item("loaded-fries", "Loaded Fries", "Specialities", "Loaded fries with toppings.", 630, "/images/fries.webp"),
+  item("alfredo-pasta", "Alfredo Pasta", "Specialities", "Pasta in Alfredo sauce.", 590, "/images/pasta.webp"),
+  item("creamy-pasta", "Creamy Pasta", "Specialities", "Creamy pasta with a rich sauce.", 630, "/images/pasta.webp"),
+  item("pizza-fries", "Pizza Fries", "Specialities", "Fries with pizza-inspired toppings.", 630, "/images/fries.webp"),
+  item("grilled-sandwich", "Grilled Sandwich", "Specialities", "Toasted grilled sandwich.", 500, "/images/wrap.webp"),
+  item("white-sauce-chicken-steak", "White Sauce Chicken Steak", "Specialities", "Chicken steak with white sauce.", 920, "/images/pasta.webp"),
+  item("behari-roll", "Behari Roll", "Specialities", "Behari-style roll.", 390, "/images/wrap.webp"),
+  item("pizza-paratha", "Pizza Pratha", "Specialities", "A pizza-style paratha.", 590, "/images/pizza.webp"),
+  item("pizza-sandwich", "Pizza Sandwich", "Specialities", "A toasted pizza-style sandwich.", 520, "/images/wrap.webp"),
+  item("tortilla-crunchy-wrap", "Tortilla Wrap / Crunchy Wrap", "Specialities", "Choose a tortilla wrap or crunchy wrap.", 450, "/images/wrap.webp"),
+
+  item("french-fries", "French Fries", "Sides", "Choose Regular or Family size.", 280, "/images/fries.webp", { sizes: [{ size: "Regular", price: 280 }, { size: "Family", price: 470 }] }),
+  item("masala-fries", "Masala Fries", "Sides", "Choose Regular or Family size.", 280, "/images/fries.webp", { sizes: [{ size: "Regular", price: 280 }, { size: "Family", price: 470 }] }),
+  item("dip-sauce", "Dip Sauce", "Sides", "Side of dip sauce.", 90, "/images/fries.webp"),
+  item("cheese-slice", "Cheese Slice", "Sides", "Add a cheese slice.", 90, "/images/fries.webp"),
+  item("extra-cheese-topping", "Extra Cheese Topping", "Pizza Add-ons", "Add cheese topping to a pizza.", 90, "/images/pizza.webp", { sizes: pizzaSizes({ S: 90, M: 130, L: 180, XL: 280 }) }),
+  item("extra-chicken-topping", "Extra Chicken Topping", "Pizza Add-ons", "Add chicken topping to a pizza.", 90, "/images/pizza.webp", { sizes: pizzaSizes({ S: 90, M: 130, L: 180, XL: 280 }) }),
+
+  item("zinger-burger", "Zinger Burger", "Burgers", "Crispy zinger burger.", 390, "/images/burger.webp"),
+  item("zinger-tower-burger", "Zinger Tower Burger", "Burgers", "Stacked zinger burger.", 490, "/images/burger.webp"),
+  item("mighty-zinger", "Mighty Zinger", "Burgers", "Mighty zinger burger.", 540, "/images/burger.webp"),
+  item("patty-burger", "Patty Burger", "Burgers", "Classic patty burger.", 280, "/images/burger.webp"),
+  item("patty-cheese-burger", "Patty Cheese Slice Burger", "Burgers", "Patty burger with a cheese slice.", 320, "/images/burger.webp"),
+  item("grilled-burger", "Grilled Burger", "Burgers", "Grilled burger.", 470, "/images/burger.webp"),
+  item("jaffaz-special-burger", "Jaffa’z Special Burger", "Burgers", "Jaffa’z special burger.", 590, "/images/burger.webp"),
+
+  item("molten-lava", "Molten Lava", "Desserts & Shakes", "Served with ice cream.", 590, "/images/pasta.webp"),
+  item("jaffaz-ice-cream", "Jaffa’z Ice Cream", "Desserts & Shakes", "Choose 1 scoop or 2 scoops.", 110, "/images/pasta.webp", { sizes: [{ size: "1 Scoop", price: 110 }, { size: "2 Scoops", price: 200 }] }),
+  item("hot-wings", "Hot Wings", "Wings & Nuggets", "Choose 5 pieces or 10 pieces.", 300, "/images/wings.webp", { sizes: [{ size: "5 Pieces", price: 300 }, { size: "10 Pieces", price: 580 }] }),
+  item("baked-wings", "Baked Wings", "Wings & Nuggets", "Choose 5 pieces or 10 pieces.", 320, "/images/wings.webp", { sizes: [{ size: "5 Pieces", price: 320 }, { size: "10 Pieces", price: 600 }] }),
+  item("grilled-wings", "Grilled Wings", "Wings & Nuggets", "Choose 5 pieces or 10 pieces.", 320, "/images/wings.webp", { sizes: [{ size: "5 Pieces", price: 320 }, { size: "10 Pieces", price: 580 }] }),
+  item("chicken-nuggets", "Chicken Nuggets", "Wings & Nuggets", "Choose 5 pieces or 10 pieces.", 290, "/images/wings.webp", { sizes: [{ size: "5 Pieces", price: 290 }, { size: "10 Pieces", price: 540 }] }),
+
+  item("shawarma", "Shawarma", "Wraps", "Chicken shawarma.", 220, "/images/wrap.webp"),
+  item("zinger-shawarma", "Zinger Shawarma", "Wraps", "Zinger shawarma.", 360, "/images/wrap.webp"),
+  item("chicken-cheese-shawarma", "Chicken Cheese Shawarma", "Wraps", "Chicken shawarma with cheese.", 280, "/images/wrap.webp"),
+  item("paratha-roll", "Paratha Roll", "Wraps", "Paratha roll.", 280, "/images/wrap.webp"),
+  item("chicken-cheese-paratha-roll", "Chicken Cheese Paratha Roll", "Wraps", "Chicken and cheese paratha roll.", 310, "/images/wrap.webp"),
+  item("zinger-paratha-roll", "Zinger Paratha Roll", "Wraps", "Zinger paratha roll.", 370, "/images/wrap.webp"),
+
+  item("fresh-lime", "Fresh Lime", "Drinks", "Fresh lime drink.", 180, "/images/pasta.webp"),
+  item("cold-drink-regular", "Cold Drink (Regular)", "Drinks", "Regular cold drink.", 70, "/images/pasta.webp"),
+  item("cold-drink-345", "Cold Drink (345ml)", "Drinks", "345 ml cold drink.", 80, "/images/pasta.webp"),
+  item("tin-pack-slim", "Tin Pack (Slim)", "Drinks", "Slim tin pack drink.", 120, "/images/pasta.webp"),
+  item("cold-drink-500", "Cold Drink (500ml)", "Drinks", "500 ml cold drink.", 120, "/images/pasta.webp"),
+  item("cold-drink-1l", "Cold Drink (1 litre)", "Drinks", "1 litre cold drink.", 170, "/images/pasta.webp"),
+  item("cold-drink-15l", "Cold Drink (1.5 litre)", "Drinks", "1.5 litre cold drink.", 220, "/images/pasta.webp"),
+  item("mineral-water-500", "Mineral Water (500ml)", "Drinks", "500 ml mineral water.", 70, "/images/pasta.webp"),
+  item("mineral-water-15l", "Mineral Water (1.5 litre)", "Drinks", "1.5 litre mineral water.", 110, "/images/pasta.webp"),
+
+  item("deal-regular-1", "Regular Deal 1", "Regular Deals", "1 Zinger Burger + 1 Regular Drink.", 430, "/images/burger.webp"),
+  item("deal-regular-2", "Regular Deal 2", "Regular Deals", "1 Patty Burger + 1 Regular Drink.", 310, "/images/burger.webp"),
+  item("deal-regular-3", "Regular Deal 3", "Regular Deals", "1 Zinger Burger + 1 Regular Drink + 1 Fries.", 640, "/images/burger.webp"),
+  item("deal-regular-4", "Regular Deal 4", "Regular Deals", "1 Zinger Roll + 1 Regular Drink + 1 Fries.", 600, "/images/wrap.webp"),
+  item("deal-regular-5", "Regular Deal 5", "Regular Deals", "5 Hot Wings + 1 Regular Drink.", 330, "/images/wings.webp"),
+  item("deal-regular-6", "Regular Deal 6", "Regular Deals", "10 Hot Wings + 1 Regular Drink.", 610, "/images/wings.webp"),
+  item("deal-regular-7", "Regular Deal 7", "Regular Deals", "1 Zinger Burger + 5 Hot Wings + 1 Fries + 1 Regular Drink.", 910, "/images/burger.webp"),
+  item("deal-regular-8", "Regular Deal 8", "Regular Deals", "5 Zinger Burgers + 1 Family Fries + 1.5 litre drink.", 2430, "/images/burger.webp"),
+  item("deal-regular-9", "Regular Deal 9", "Regular Deals", "2 Zinger Burgers + 1 Fries + 500ml drink.", 1020, "/images/burger.webp"),
+  item("deal-regular-10", "Regular Deal 10", "Regular Deals", "1 Pizza Pratha + 1 Regular Drink.", 620, "/images/pizza.webp"),
+  item("deal-regular-11", "Regular Deal 11", "Regular Deals", "1 Grilled Burger + 1 Regular Drink.", 500, "/images/burger.webp"),
+  item("deal-regular-12", "Regular Deal 12", "Regular Deals", "2 Grilled Burgers + 500ml drink.", 1000, "/images/burger.webp"),
+  item("deal-regular-13", "Regular Deal 13", "Regular Deals", "1 Club Sandwich + 1 Regular Drink + 1 Fries.", 680, "/images/wrap.webp"),
+  item("deal-regular-14", "Regular Deal 14", "Regular Deals", "1 Tortilla / Crunchy Wrap + 1 Regular Drink + 1 Fries.", 730, "/images/wrap.webp"),
+];
+
+export const categories = ["All", ...new Set(menuItems.map(({ category }) => category))];
