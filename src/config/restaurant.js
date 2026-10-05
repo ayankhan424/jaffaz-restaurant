@@ -7,9 +7,10 @@ export const restaurant = {
   whatsappNumber: "923011060005", // International format, digits only
   phoneNumber: "067-3366305",
   phoneDialNumber: "+9267336305",
+  email: "glitchstark4@gmail.com",
+  openingHours: "10:00 AM – 4:00 AM",
   address: "195/6, Faisal Town, People’s Colony Road, Opposite Kachi Mandi Ground, Vehari",
   googleMapsUrl: "", // Add a direct place link when one is available
-  openingHours: [], // Add confirmed opening hours here when available
   socialLinks: { instagram: "https://www.instagram.com/JaffazFoodLounge" },
   serviceRadiusKm: 5,
   deliveryFee: 50,

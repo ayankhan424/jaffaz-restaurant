@@ -1951,3 +1951,113 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
   .food-info h3 { font-size:17px; }
   .food-info p { font-size:13px; }
 }
+
+/* Multi-page layouts share the existing Jaffa'z menu and order components. */
+.nav a.active { color:#8c6700; font-weight:700; position:relative; }
+.nav a.active::after { content:""; position:absolute; left:0; right:0; bottom:-10px; height:2px; background:var(--yellow); }
+.header-order[aria-current="page"] { box-shadow:0 0 0 2px var(--yellow); }
+.page-intro { min-height:330px; padding:44px 6.5%; background:#efede6; display:grid; grid-template-columns:1.08fr .92fr; align-items:center; gap:7%; overflow:hidden; }
+.page-intro-copy { padding:24px 0 28px 4%; max-width:660px; }
+.page-intro h1 { margin:19px 0 13px; font:500 clamp(42px,5vw,68px)/1.05 "Playfair Display",Georgia,serif; letter-spacing:-.04em; }
+.page-intro h1 em,.order-page-summary h2 em,.why-section h2 em,.guest-notes h2 em,.gallery-heading h2 em,.about-values h3 em,.about-team h2 em,.map-panel h2 em { color:#a87f06; font-weight:500; }
+.page-intro p { max-width:520px; color:#64625c; line-height:1.8; font-size:16px; }
+.page-intro>img { width:100%; height:260px; object-fit:cover; border-radius:5px 90px 5px 5px; }
+.home-featured { padding-top:76px; padding-bottom:72px; }
+.home-featured .section-heading { margin-bottom:27px; }
+.home-featured .section-heading h2,.gallery-heading h2 { font-size:clamp(33px,4vw,48px); }
+.home-featured .food-card { min-width:0; }
+.why-section { padding-top:67px; padding-bottom:73px; background:#f0eee7; }
+.why-section h2,.guest-notes h2,.about-team h2,.map-panel h2 { font:500 clamp(36px,4.4vw,52px)/1.08 "Playfair Display",Georgia,serif; letter-spacing:-.035em; margin:18px 0 32px; }
+.why-grid,.about-values { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:#dfdcd2; border:1px solid #dfdcd2; }
+.why-grid article,.about-values article { background:#f8f7f2; padding:29px 30px; }
+.why-grid article>b,.about-values article>span { color:#9b770d; font-size:12px; letter-spacing:.12em; }
+.why-grid h3,.about-values h3 { font:500 23px "Playfair Display",Georgia,serif; margin:18px 0 10px; }
+.why-grid p,.about-values p { color:var(--muted); font-size:14px; line-height:1.75; margin:0; }
+.guest-notes { display:grid; grid-template-columns:.9fr 1.1fr; gap:8%; align-items:center; padding-top:76px; padding-bottom:76px; }
+.guest-note-image img { display:block; width:100%; max-height:390px; object-fit:cover; }
+.guest-notes h2 { margin-bottom:16px; }
+.guest-notes p { color:var(--muted); line-height:1.8; font-size:15px; max-width:490px; margin-bottom:22px; }
+.page-intro+.about-page-section { margin-top:25px; }
+.about-values { margin-top:64px; margin-bottom:64px; }
+.about-team { display:grid; grid-template-columns:1fr 1fr; gap:8%; align-items:center; padding-top:20px; padding-bottom:76px; }
+.about-team img { width:100%; max-height:390px; object-fit:cover; border-radius:4px 90px 4px 4px; }
+.about-team p,.map-panel p { color:var(--muted); line-height:1.8; font-size:15px; }
+.about-team h2 { margin-bottom:17px; }
+.gallery-section { padding-top:57px; padding-bottom:78px; }
+.gallery-heading { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:28px; }
+.gallery-heading h2 { margin:14px 0 0; }
+.gallery-heading>p { color:var(--muted); font-size:13px; max-width:320px; line-height:1.6; }
+.gallery-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); grid-auto-rows:210px; gap:14px; }
+.gallery-tile { padding:0; border:0; position:relative; overflow:hidden; background:#e5e2da; text-align:left; }
+.gallery-tile img { display:block; width:100%; height:100%; object-fit:cover; transition:transform .45s ease; }
+.gallery-tile:hover img { transform:scale(1.055); }
+.gallery-tile>span { position:absolute; left:0; right:0; bottom:0; padding:40px 15px 14px; display:flex; justify-content:space-between; align-items:end; gap:8px; color:white; font-size:14px; font-weight:700; background:linear-gradient(transparent,#0009); opacity:.94; }
+.gallery-tile>span b { font-size:10px; white-space:nowrap; }
+.gallery-tile.tall { grid-row:span 2; }
+.gallery-tile.wide { grid-column:span 2; }
+.gallery-tile.feature { grid-column:span 2; }
+.lightbox { position:fixed; inset:0; z-index:70; padding:45px; background:#111e; display:flex; flex-direction:column; justify-content:center; align-items:center; }
+.lightbox>img { max-width:min(100%,1100px); max-height:80vh; object-fit:contain; box-shadow:0 20px 65px #0008; }
+.lightbox>p { color:white; margin:14px 0 0; font-size:14px; }
+.lightbox .icon-close { position:absolute; top:22px; right:22px; }
+.contact-page-section { grid-template-columns:1fr .85fr; align-items:start; padding-top:61px; padding-bottom:63px; }
+.contact-page-section .contact-copy h2 { max-width:570px; }
+.contact-detail { display:grid; grid-template-columns:130px 1fr; gap:12px; padding:14px 0; border-bottom:1px solid var(--line); font-size:14px; line-height:1.6; }
+.contact-detail b { color:#34332e; }
+.contact-detail span { color:var(--muted); }
+.contact-copy>.address-link,.contact-copy>.footer-social { display:flex; margin-top:17px; }
+.contact-form { padding:29px; border:1px solid var(--line); background:#f2f0e9; display:grid; gap:16px; }
+.contact-form h3 { font:500 27px "Playfair Display",Georgia,serif; margin:0 0 2px; }
+.contact-form label { display:grid; gap:7px; font-size:13px; font-weight:700; }
+.contact-form input,.contact-form textarea { border:1px solid #dcd8ce; background:#fff; padding:13px 14px; min-width:0; font-size:14px; resize:vertical; }
+.contact-form .button { justify-self:start; }
+.contact-form-hint { color:var(--muted); font-size:12px; line-height:1.6; margin:0; }
+.map-panel { display:grid; grid-template-columns:.75fr 1.25fr; gap:6%; align-items:center; padding-top:49px; padding-bottom:70px; border-top:1px solid var(--line); }
+.map-panel h2 { margin:14px 0; }
+.map-panel iframe { width:100%; height:320px; border:0; filter:saturate(.78); }
+.order-page-summary { margin-top:36px; margin-bottom:8px; padding:27px 30px; display:flex; align-items:center; justify-content:space-between; gap:30px; background:#f1efe8; }
+.order-page-summary h2 { font:500 34px "Playfair Display",Georgia,serif; margin:12px 0 5px; }
+.order-page-summary p { color:var(--muted); font-size:13px; line-height:1.6; max-width:740px; margin:0; }
+.order-page-summary .button { flex-shrink:0; }
+.not-found { padding-top:100px; padding-bottom:110px; }
+@media(max-width:880px) {
+  .page-intro { padding-left:5%; padding-right:5%; gap:5%; min-height:285px; }
+  .page-intro>img { height:220px; }
+  .gallery-grid { grid-template-columns:repeat(3,minmax(0,1fr)); grid-auto-rows:190px; }
+  .contact-page-section { grid-template-columns:1fr 1fr; gap:5%; }
+}
+@media(max-width:700px) {
+  .nav a.active::after { display:none; }
+  .page-intro { grid-template-columns:1fr; gap:16px; padding:33px 6% 27px; }
+  .page-intro-copy { padding:8px 0 0; }
+  .page-intro h1 { font-size:43px; }
+  .page-intro p { font-size:14px; margin-bottom:0; }
+  .page-intro>img { height:190px; border-radius:4px 60px 4px 4px; }
+  .home-featured { padding-top:51px; padding-bottom:50px; }
+  .home-featured .section-heading { align-items:start; flex-direction:column; gap:10px; }
+  .why-section { padding-top:46px; padding-bottom:47px; }
+  .why-grid,.about-values { grid-template-columns:1fr; }
+  .why-grid article,.about-values article { padding:22px; }
+  .why-grid h3,.about-values h3 { margin:10px 0 6px; }
+  .guest-notes { grid-template-columns:1fr; gap:24px; padding-top:49px; padding-bottom:48px; }
+  .guest-note-image img { max-height:245px; }
+  .page-intro+.about-page-section { margin-top:0; }
+  .about-values { margin-top:36px; margin-bottom:41px; }
+  .about-team { grid-template-columns:1fr; gap:24px; padding-bottom:50px; }
+  .about-team img { max-height:250px; }
+  .gallery-section { padding-top:40px; padding-bottom:50px; }
+  .gallery-heading { align-items:start; flex-direction:column; gap:8px; }
+  .gallery-heading h2 { font-size:33px; }
+  .gallery-grid { grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-rows:150px; gap:9px; }
+  .gallery-tile.tall { grid-row:span 2; }
+  .gallery-tile>span { font-size:12px; padding:32px 9px 10px; }
+  .gallery-tile>span b { display:none; }
+  .lightbox { padding:18px; }
+  .contact-page-section { grid-template-columns:1fr; gap:30px; padding-top:42px; padding-bottom:44px; }
+  .contact-detail { grid-template-columns:105px 1fr; font-size:13px; }
+  .contact-form { padding:21px; }
+  .map-panel { grid-template-columns:1fr; gap:22px; padding-top:39px; padding-bottom:45px; }
+  .map-panel iframe { height:260px; }
+  .order-page-summary { flex-direction:column; align-items:stretch; padding:22px; margin-top:20px; }
+  .order-page-summary .button { align-self:start; }
+}

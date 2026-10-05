@@ -16,7 +16,7 @@ To make a deployable copy, run `npm run build`. Upload the contents of the gener
 
 Edit `src/config/restaurant.js`. It contains the WhatsApp number, call number, address, map link, opening hours, social link, delivery radius, delivery fee, and free-delivery minimum. The WhatsApp value must use the international country code and digits only. For example, Pakistan’s `0301-1060005` is stored as `923011060005`.
 
-Opening hours and a precise map pin were not supplied, so hours are not shown as facts. The Maps button searches the printed address; add a direct place link in `googleMapsUrl` when one is available.
+Opening hours are shown as provided in `openingHours`. The Maps button searches the printed address; add a direct place link in `googleMapsUrl` when one is available.
 
 ## Update the menu
 
